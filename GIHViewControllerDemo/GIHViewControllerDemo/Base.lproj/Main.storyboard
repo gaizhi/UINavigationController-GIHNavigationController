@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Nlj-oK-jcp">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--initial vc-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="ViewController" title="initial vc" id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z5e-bC-ksq">
+                                <rect key="frame" x="63.5" y="326" width="61" height="30"/>
+                                <state key="normal" title="Print Tab"/>
+                                <connections>
+                                    <action selector="onPrintTabButtonClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZXY-E6-0kU"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w70-BU-j4o">
+                                <rect key="frame" x="156" y="326" width="63" height="30"/>
+                                <state key="normal" title="Print Nav"/>
+                                <connections>
+                                    <action selector="onPrintNavButtonClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yQ7-aZ-zs6"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vin-zc-l21">
+                                <rect key="frame" x="253.5" y="326" width="56" height="30"/>
+                                <state key="normal" title="Print VC"/>
+                                <connections>
+                                    <action selector="onPrintVCButtonClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="X1n-hg-Sct"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zl3-w0-fBU">
+                                <rect key="frame" x="9.5" y="74" width="355" height="111.5"/>
+                                <color key="backgroundColor" red="0.8670101220944445" green="0.86204592938611113" blue="0.86771541723333334" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xjw-QX-pcz">
+                                <rect key="frame" x="53" y="496.5" width="82" height="30"/>
+                                <state key="normal" title="Present Tab"/>
+                                <connections>
+                                    <action selector="onPresentTabButtonClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vzj-bM-7d3"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hyZ-px-X8R">
+                                <rect key="frame" x="145.5" y="496.5" width="83" height="30"/>
+                                <state key="normal" title="present Nav"/>
+                                <connections>
+                                    <action selector="onPresentNavButtonClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="EDs-oS-APx"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kzf-M7-58B">
+                                <rect key="frame" x="243" y="496.5" width="77" height="30"/>
+                                <state key="normal" title="Present VC"/>
+                                <connections>
+                                    <action selector="onPresentVCButtonClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZN1-VA-it2"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nVF-CJ-ZQu">
+                                <rect key="frame" x="168" y="526" width="39" height="30"/>
+                                <state key="normal" title="Close"/>
+                                <connections>
+                                    <action selector="onCloseButtonClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tjU-OB-767"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Kzf-M7-58B" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" multiplier="1.5" id="0eB-Kq-jRm"/>
+                            <constraint firstItem="Vin-zc-l21" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" multiplier="1.5" id="6Ty-SO-pGQ"/>
+                            <constraint firstItem="zl3-w0-fBU" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="8ZM-J9-aEg"/>
+                            <constraint firstItem="xjw-QX-pcz" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" multiplier="0.5" id="9yl-hK-hTx"/>
+                            <constraint firstItem="Z5e-bC-ksq" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="CGH-ls-vxt"/>
+                            <constraint firstItem="nVF-CJ-ZQu" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="FQD-lJ-q8d"/>
+                            <constraint firstItem="zl3-w0-fBU" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" multiplier="0.3" id="Gsr-Ex-wF9"/>
+                            <constraint firstItem="zl3-w0-fBU" firstAttribute="width" secondItem="6Tk-OE-BBY" secondAttribute="width" constant="-20" id="LPy-Lw-6SX"/>
+                            <constraint firstItem="hyZ-px-X8R" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" multiplier="1.5" id="LVy-rR-Q22"/>
+                            <constraint firstItem="xjw-QX-pcz" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" multiplier="1.5" id="Led-x7-Eo1"/>
+                            <constraint firstItem="Kzf-M7-58B" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" multiplier="1.5" id="V5b-6C-Fkm"/>
+                            <constraint firstItem="Vin-zc-l21" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="WhM-HJ-VbA"/>
+                            <constraint firstItem="hyZ-px-X8R" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="aIU-s2-d9m"/>
+                            <constraint firstItem="w70-BU-j4o" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="b99-eY-Emb"/>
+                            <constraint firstItem="zl3-w0-fBU" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="ezv-q2-LWe"/>
+                            <constraint firstItem="Z5e-bC-ksq" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" multiplier="0.5" id="peV-8E-fdp"/>
+                            <constraint firstItem="w70-BU-j4o" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="vHb-3r-3JN"/>
+                            <constraint firstItem="nVF-CJ-ZQu" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" multiplier="0.9" id="x77-KR-Qr8"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="uwk-dr-vxi"/>
+                    <connections>
+                        <outlet property="closeButton" destination="nVF-CJ-ZQu" id="BmJ-44-ZZI"/>
+                        <outlet property="logLabel" destination="zl3-w0-fBU" id="07g-jQ-U31"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1072.8" y="126.38680659670166"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="eyY-ng-Wcn">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="bu2-JT-034" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="zRo-mk-ajC"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="z9f-aQ-Bgt">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="4wu-p7-u00"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2gg-kH-qld" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1072.8" y="785.75712143928047"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="MAz-5V-dup">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="Nlj-oK-jcp" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="17M-PP-rbD">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="bu2-JT-034" kind="relationship" relationship="viewControllers" id="ikw-ub-m7h"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jup-kw-iiA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="133.59999999999999" y="785.75712143928047"/>
+        </scene>
+    </scenes>
+</document>
